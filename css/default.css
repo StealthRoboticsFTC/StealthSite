@@ -10,9 +10,13 @@ body {
 }
 
 .profile {
-	text-align: center;
 	height: auto;
 	width: 50%;
+}
+
+.profile-card {
+	text-align: center;
+	margin: 100px 0px 15px 0px;
 }
 
 .header {
@@ -20,15 +24,15 @@ body {
 	font-weight: bold;
 	color: white;
 	margin: 35px 45px 35px 45px !important;
-	font-size: 45px;
+	font-size: 50px;
 }
 
 .sub-header {
 	text-align: center;
 	font-weight: bold;
 	color: gray;
-	margin: 25px 45px 25px 45px !important;
-	font-size: 30px;
+	margin: 20px 45px 20px 45px !important;
+	font-size: 35px;
 }
 
 .label {
