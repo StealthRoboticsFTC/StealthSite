@@ -1,0 +1,12 @@
+body {
+	background-color: black;
+}
+
+.banner {
+	text-align: center;
+}
+
+.header {
+	text-align: center;
+	font-weight: bold;
+}
