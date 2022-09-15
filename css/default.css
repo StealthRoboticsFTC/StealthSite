@@ -18,7 +18,7 @@ body {
 	color: gray;
 }
 
-.text-body {
+#override .text-body {
 	text-weight: 550;
 	color: white;
 }
