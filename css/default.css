@@ -1,6 +1,7 @@
 body {
 	background-color: black;
 	color: white;
+	font-size: 50;
 }
 
 .banner {
@@ -19,11 +20,15 @@ body {
 	font-weight: bold;
 }
 
-#override .text-body {
+.text-body {
 	text-weight: 550;
 	color: white;
 }
 
-.body {
+#override .body {
 	margin: 2em;
+}
+
+.title {
+	front-size: 100px;
 }
