@@ -42,6 +42,7 @@ body {
 }
 
 .watermark {
+	margin: 5em !important;
 	text-align: center !important;
 	color: gray !important;
 }
@@ -59,8 +60,9 @@ body {
 }
 
 .icon {
-	width: 12.5%;
-	height: 12.5%;
-	border-radius: 1em;
+	width: 12%;
+	height: 12%;
+	border-radius: 10%;
 	margin: 0px 10px 0px 10px !important;
+	padding: 0px !important;
 }
