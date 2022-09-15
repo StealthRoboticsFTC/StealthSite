@@ -11,3 +11,8 @@ body {
 	text-align: center;
 	font-weight: bold;
 }
+
+.label {
+	text-align: left;
+	color: gray;
+}
