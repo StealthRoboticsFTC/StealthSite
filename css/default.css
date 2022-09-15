@@ -16,6 +16,7 @@ body {
 .label {
 	text-align: left;
 	color: gray;
+	font-weight: bold;
 }
 
 #override .text-body {
