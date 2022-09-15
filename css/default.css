@@ -19,7 +19,10 @@ body {
 }
 
 .text-body {
-	padding: 3em;
 	text-weight: 550;
 	color: white;
+}
+
+.body {
+	margin: 2em;
 }
