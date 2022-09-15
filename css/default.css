@@ -5,6 +5,14 @@ body {
 
 .banner {
 	text-align: center;
+	height: auto;
+	width: 100%;
+}
+
+.profile {
+	text-align: center;
+	height: auto;
+	width: 50%;
 }
 
 .header {
@@ -12,6 +20,15 @@ body {
 	font-weight: bold;
 	color: white;
 	margin: 35px 45px 35px 45px !important;
+	font-size: 45px;
+}
+
+.sub-header {
+	text-align: center;
+	font-weight: bold;
+	color: gray;
+	margin: 25px 45px 25px 45px !important;
+	font-size: 30px;
 }
 
 .label {
