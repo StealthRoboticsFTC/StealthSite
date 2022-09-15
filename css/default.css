@@ -37,16 +37,8 @@ body {
 
 .nav-link {
 	font-weight: bolder !important;
-	font-size: 30px !important;
-	margin: 10px 20px 10px 20px !important;
-	background-color: rgb(150, 0, 0) !important;
-	border-radius: 0.75em;
-	padding: 10px 20px 10px 20px !important;
-}
-
-.navbar-brand {
-	font-weight: bolder !important;
 	font-size: 25px !important;
+	margin: 0px 10px 0px 10px !important;
 }
 
 .watermark {
@@ -67,7 +59,8 @@ body {
 }
 
 .icon {
-	width: 20%;
-	height: 20%;
-	border-radius: 0.75em;
+	width: 12.5%;
+	height: 12.5%;
+	border-radius: 1em;
+	margin: 0px 10px 0px 10px !important;
 }
