@@ -10,6 +10,7 @@ body {
 .header {
 	text-align: center;
 	font-weight: bold;
+	color: white;
 }
 
 .label {
@@ -18,6 +19,7 @@ body {
 }
 
 .text-body {
-	padding: 2em;
+	padding: 3em;
 	text-weight: 550;
+	color: white;
 }
