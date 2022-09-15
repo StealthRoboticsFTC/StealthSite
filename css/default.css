@@ -16,3 +16,8 @@ body {
 	text-align: left;
 	color: gray;
 }
+
+.text-body {
+	padding: 2em;
+	text-weight: 550;
+}
