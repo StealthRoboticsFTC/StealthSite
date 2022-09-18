@@ -87,3 +87,25 @@ body {
 	margin: 0px 10px 0px 10px !important;
 	padding: 0px !important;
 }
+
+.middle{
+	text-align: center;
+}
+
+.logo{
+	text-align: center;
+	height: auto;
+	width: 50%;
+}
+
+.dropdown-menu {
+	font-size: 25px !important;
+	margin: 0px 10px 0px 10px !important;
+	background-color: red;
+
+}
+
+.dropdown-item {
+	font-weight: bolder !important;
+	color: white;
+}
