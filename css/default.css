@@ -8,6 +8,16 @@ body {
 	height: auto;
 	width: 100%;
 }
+button {
+	background-color: red;
+	border-color: red;
+	color: white;
+ 	font-size: 25px;
+	border-radius: 8px;
+	height: 50%;
+	width: 15%;
+	font-weight: bold;
+}
 
 .profile {
 	height: auto;
