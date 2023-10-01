@@ -1,0 +1,117 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.banner {
+    text-align: center;
+    height: auto;
+    width: 100%;
+}
+
+.profile {
+    height: auto;
+    width: 50%;
+}
+
+.profile-card {
+    text-align: center;
+    margin: 100px 0px 15px 0px;
+}
+
+.header {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin: 35px 45px 35px 45px !important;
+    font-size: 50px;
+}
+
+.sub-header {
+    text-align: center;
+    font-weight: bold;
+    color: gray;
+    margin: 20px 45px 20px 45px !important;
+    font-size: 35px;
+}
+
+.label {
+    text-align: left;
+    color: gray;
+    font-weight: bold;
+    margin: 25px 45px 25px 45px !important;
+    font-size: 30px !important;
+}
+
+.sponser-us	{
+    font-weight: bold;
+    margin: 25px 45px 25px 45px !important;
+    font-size: 30px !important;
+}
+
+.text-body {
+    text-weight: 550;
+    color: white !important;
+    font-size: 20px !important;
+    margin: 25px 45px 25px 45px !important;
+}
+
+.title {
+    font-size: 75px !important;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.nav-link {
+    font-weight: bolder !important;
+    font-size: 25px !important;
+    margin: 0px 10px 0px 10px !important;
+}
+
+.watermark {
+    margin: 5em !important;
+    text-align: center !important;
+    color: gray !important;
+}
+
+.body {
+    margin: 75px !important;
+}
+
+.container-fluid {
+    margin: 10px 45px 10px 45px !important;
+}
+
+.navbar {
+    background-color: blue !important;
+}
+
+.icon {
+    width: 12%;
+    height: 12%;
+    border-radius: 10%;
+    margin: 0px 10px 0px 10px !important;
+    padding: 0px !important;
+}
+
+.middle{
+    text-align: center;
+}
+
+.logo{
+    text-align: center;
+    height: auto;
+    width: 50%;
+}
+
+.dropdown-menu {
+    font-size: 25px !important;
+    margin: 0px 10px 0px 10px !important;
+    background-color: blue;
+
+}
+
+.dropdown-item {
+    font-weight: bolder !important;
+    color: white;
+}
