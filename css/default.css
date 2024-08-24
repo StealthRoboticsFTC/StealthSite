@@ -29,9 +29,10 @@ button {
 	height: auto;
 }
 
-.profile-img{
+.profile-img {
 	height: 15em;
 }
+
 .header {
 	text-align: center;
 	font-weight: bold;
@@ -116,8 +117,7 @@ button {
 	color: white;
 }
 
-@media (max-width: 767px) {
-}
+@media (max-width: 767px) {}
 
 .profile {
 	max-width: 100%;
@@ -125,28 +125,14 @@ button {
 }
 
 .card-img-top {
-	width: 100%;  /* Ensure it takes the full width of the card */
-	height: 15em;  /* Set a fixed height for all images */
-	object-fit: cover;  /* This will crop the image to fit without stretching */
-}
-
-.card-body {
-	padding-top: 1rem;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
+	width: 100%;
+	/* Ensure it takes the full width of the card */
 	height: 15em;
+	/* Set a fixed height for all images */
+	object-fit: cover;
+	/* This will crop the image to fit without stretching */
 }
 
-.card-text {
-	text-align: left;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
+@media (max-width: 767px) {}
 
-@media (max-width: 767px) {
-}
-
-.image-container:hover {
-}
+.image-container:hover {}
