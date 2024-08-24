@@ -2,20 +2,30 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stealth Robotics #18255</title>
     <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="manifest" href="icons/site.webmanifest">
     <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
 
-    <!-- Load Font Awesome 4.7 (older version for your existing icons) -->
+    <!-- Load Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Load Font Awesome 4.7 scoped to .fa4 class -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .fa4 .fa {
+            font-family: FontAwesome !important;
+        }
+    </style>
+
+    <!-- Load Font Awesome 6.x -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <link rel="stylesheet" type="text/css" href="css/default.css">
     <style>
@@ -64,7 +74,7 @@
 <body>
 <nav class="navbar navbar-dark navbar-expand-lg bg-dark text-white">
     <div class="container-fluid">
-        <img class="navbar-brand icon" src="images/stealth/logo.png">
+        <img class="navbar-brand icon" src="images/stealth/logo.png" alt="Stealth Robotics Logo">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -75,11 +85,11 @@
                     <a class="nav-link" href="index.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="game.html">Game</a>
+                    <a class="nav-link" href="game.html">Game</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                       aria-expanded="false" aria-current="page">
+                       aria-expanded="false">
                         Team
                     </a>
                     <ul class="dropdown-menu">
@@ -101,7 +111,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="fll-covert/covert.html">Covert</a>
@@ -110,7 +120,6 @@
         </div>
     </div>
 </nav>
-
 <!-- Header Section -->
 <header class="text-white text-center py-5">
     <h1>Contact Us</h1>
@@ -120,34 +129,39 @@
 <!-- Social Media Section -->
 <section class="container my-5 rounded">
     <div class="row text-center">
-        <div class="col-md-3 d-flex justify-content-center align-items-center">
-            <a href="https://www.instagram.com/stealth_robotics/" target="_blank" class="text-decoration-none text-white">
+        <!-- Font Awesome 4.7 Icons -->
+        <div class="col-md-3 d-flex justify-content-center align-items-center fa4">
+            <a href="https://www.instagram.com/stealth_robotics/" target="_blank"
+               class="text-decoration-none text-white">
                 <div class="rounded-circle mb-3 bg-secondary media-icon">
-                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-instagram"></i> <!-- Font Awesome 4.7 -->
                 </div>
                 <h4>Instagram</h4>
             </a>
         </div>
-        <div class="col-md-3 d-flex justify-content-center align-items-center">
-            <a href="https://www.facebook.com/StealthRoboticsFTC/" target="_blank" class="text-decoration-none text-white">
+        <div class="col-md-3 d-flex justify-content-center align-items-center fa4">
+            <a href="https://www.facebook.com/StealthRoboticsFTC/" target="_blank"
+               class="text-decoration-none text-white">
                 <div class="rounded-circle mb-3 bg-secondary media-icon">
-                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-facebook"></i> <!-- Font Awesome 4.7 -->
                 </div>
                 <h4>Facebook</h4>
             </a>
         </div>
+        <!-- Font Awesome 6.x Icons -->
         <div class="col-md-3 d-flex justify-content-center align-items-center">
             <a href="https://x.com/Stealth18255" target="_blank" class="text-decoration-none text-white">
                 <div class="rounded-circle mb-3 bg-secondary media-icon">
-                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fab fa-x-twitter"></i> <!-- Font Awesome 6.x -->
                 </div>
                 <h4>X</h4>
             </a>
         </div>
-        <div class="col-md-3 d-flex justify-content-center align-items-center">
-            <a href="https://www.youtube.com/@StealthRobotics18255" target="_blank" class="text-decoration-none text-white">
+        <div class="col-md-3 d-flex justify-content-center align-items-center fa4">
+            <a href="https://www.youtube.com/@StealthRobotics18255" target="_blank"
+               class="text-decoration-none text-white">
                 <div class="rounded-circle mb-3 bg-secondary media-icon">
-                    <i class="fa fa-youtube"></i>
+                    <i class="fa fa-youtube"></i> <!-- Font Awesome 4.7 -->
                 </div>
                 <h4>YouTube</h4>
             </a>
@@ -164,7 +178,9 @@
                 <h2 class="text-center mb-4 text-white">Send Us a Message</h2>
                 <!-- Embed Google Form -->
                 <div class="form-container">
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfVUUj5c7ge3hYsmxubCHR_IRru8B1tjZ6iBPkwk6NEC4NawQ/viewform?embedded=true" width="640" height="899" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>                </div>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfVUUj5c7ge3hYsmxubCHR_IRru8B1tjZ6iBPkwk6NEC4NawQ/viewform?embedded=true"
+                            width="640" height="899" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
             </div>
         </div>
 
@@ -172,13 +188,17 @@
         <div class="col-lg-6">
             <div class="p-4 bg-red rounded shadow text-center text-white">
                 <h2 class="mb-4">Contact Information</h2>
-                <p>Email: <a href="mailto:info@stealthrobotics.com" class="text-white">stealthrobotics1@gmail.com</a></p>
+                <p>Email: <a href="mailto:info@stealthrobotics.com" class="text-white">stealthrobotics1@gmail.com</a>
+                </p>
                 <p>Phone: <a href="tel:+1234567890" class="text-white">+1 (847) 721-5408</a></p>
                 <img src="images/stealth/logo.png" alt="Stealth Robotics Logo" class="img-fluid my-3">
             </div>
         </div>
     </div>
 </section>
+
+<!-- Bootstrap JS bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
