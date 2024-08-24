@@ -1,10 +1,7 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
 	<title>Stealth Robotics #18255</title>
-
 	<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
@@ -13,119 +10,137 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		  integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+			crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="css/default.css">
 </head>
-
 <body>
-	<nav class="navbar navbar-dark navbar-expand-lg bg-dark text-white">
-		<div class="container-fluid">
-			<img class="navbar-brand icon" src="images/stealth/logo.png">
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="game.html">Game</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link active dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Team
-						</a>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="members.html">Members</a></li>
-							<li><a class="dropdown-item" href="alumni.html">Alumni</a></li>
-						</ul>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="events.html">Events</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Sponsor
-						</a>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="sponsors.html">Sponsors</a></li>
-							<li><a class="dropdown-item" href="sponsor-us.html">Sponsor Us</a></li>
-						</ul>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contact.html">Contact</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="fll-covert/covert.html">Covert</a>
-					</li>
-				</ul>
+<nav class="navbar navbar-dark navbar-expand-lg bg-dark text-white ">
+	<div class="container-fluid">
+		<img class="navbar-brand icon" src="images/stealth/logo.png">
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" aria-current="page" href="">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="game.html">Game</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link active dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Team
+					</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="members.html">Members</a></li>
+						<li><a class="dropdown-item" href="alumni.html">Alumni</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="events.html">Events</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Sponsor
+					</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="sponsors.html">Sponsors</a></li>
+						<li><a class="dropdown-item" href="sponsor-us.html">Sponsor Us</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="fll-covert/covert.html">Covert</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<!-- Main Content -->
+<div class="container mt-4">
+	<h1 class="mb-3 text-center">Members</h1>
+	<div class="row">
+		<!-- Dynamic card generation, assuming multiple profiles -->
+		<div class="col-md-6 col-lg-4 mb-4">
+			<div class="card bg-secondary text-white">
+				<img src="images/stealth/members/sohan.webp" class="card-img-top" alt="Sohan A.">
+				<div class="card-body">
+					<h5 class="card-title">Sohan A.</h5>
+					<hr style="border: 1px solid white; margin: 8px 0;">
+					<p class="card-text">
+						<b>Role:</b> Builder<br>
+						<b>Grade:</b> Senior<br>
+					</p>
+				</div>
 			</div>
 		</div>
-	</nav>
-	<div class="body">
-		<h1 class="header">Members</h1>
-		<div class="profile-card">
-			<img class="profile" src="images/stealth/members/sohan.webp">
-			<p class="text-body">
-				<strong>Sohan A.</strong><br>
-				Grade: 11th<br>
-				Role: Builder <br>
-			</p>
+		<div class="col-md-6 col-lg-4 mb-4">
+			<div class="card bg-secondary text-white">
+				<img src="images/stealth/members/tyler.webp" class="card-img-top" alt="Tyler B.">
+				<div class="card-body">
+					<h5 class="card-title">Tyler B.</h5>
+					<hr style="border: 1px solid white; margin: 8px 0;">
+					<p class="card-text">
+						<b>Role:</b> Builder<br>
+						<b>Grade:</b> Senior<br>
+					</p>
+				</div>
+			</div>
 		</div>
 
-		<div class="profile-card">
-			<img class="profile" src="images/stealth/members/tyler.webp">
-			<p class="text-body">
-				<strong>Tyler B.</strong><br>
-				Grade: 11th<br>
-				Role: Builder <br>
-			</p>
-		</div>
-		<div class="profile-card">
-			<img class="profile" src="images/stealth/members/joshua.webp">
-			<p class="text-body">
-				<strong>Joshua C.</strong><br>
-				Grade: 12th<br>
-				Role: Main Programmer<br>
-			</p>
-		</div>
-		<div class="profile-card">
-			<img class="profile" src="images/stealth/members/daniel.webp">
-			<p class="text-body">
-				<strong>Daniel D.</strong><br>
-				Grade: 12th<br>
-				Role: Main Programmer<br>
-			</p>
+		<div class="col-md-6 col-lg-4 mb-4">
+			<div class="card bg-secondary text-white">
+				<img src="images/stealth/members/annat.JPG" class="card-img-top" alt="Annat J.">
+				<div class="card-body">
+					<h5 class="card-title">Annat J.</h5>
+					<hr style="border: 1px solid white; margin: 8px 0;">
+					<p class="card-text">
+						<b>Role:</b> Builder and Programmer<br>
+						<b>Grade:</b> 8th<br>
+					</p>
+				</div>
+			</div>
 		</div>
 
-		<div class="profile-card">
-			<img class="profile" src="images/stealth/members/james.JPG">
-			<p class="text-body">
-				<strong>James</strong><br>
-				Grade: 9th<br>
-				Role: Builder<br>
-			</p>
+		<div class="col-md-6 col-lg-4 mb-4">
+			<div class="card bg-secondary text-white">
+				<img src="images/stealth/logo.png" class="card-img-top" alt="Johnothan V.">
+				<div class="card-body">
+					<h5 class="card-title">Stealth R.</h5>
+					<hr style="border: 1px solid white; margin: 8px 0;">
+					<p class="card-text">
+						<b>Role:</b> <br>
+						<b>Grade:</b> <br>
+					</p>
+				</div>
+			</div>
 		</div>
-		<div class="profile-card">
-			<img class="profile" src="images/stealth/members/annat.JPG">
-			<p class="text-body">
-				<strong>Annat J.</strong><br>
-				Grade: 7th<br>
-				Role: Builder/Programmer<br>
-			</p>
+
+		<div class="col-md-6 col-lg-4 mb-4">
+			<div class="card bg-secondary text-white">
+				<img src="images/stealth/logo.png" class="card-img-top" alt="Johnothan V.">
+				<div class="card-body">
+					<h5 class="card-title">Stealth R.</h5>
+					<hr style="border: 1px solid white; margin: 8px 0;">
+					<p class="card-text">
+						<b>Role:</b> <br>
+						<b>Grade:</b> <br>
+					</p>
+				</div>
+			</div>
 		</div>
-		<div class="profile-card">
-			<img class="profile" src="images/stealth/members/hailey.JPG">
-			<p class="text-body">
-				<strong>Hailey V.</strong><br>
-				Grade: 11th<br>
-				Role: Marketing<br>
-			</p>
 		</div>
-		<p class="watermark">Website by JChen and TBerlin</p>
+		<!-- Additional profiles here -->
 	</div>
-</body>
+</div>
 
+<!-- Bootstrap JS -->
+</body>
 </html>
