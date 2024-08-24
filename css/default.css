@@ -140,3 +140,47 @@ button {
 @media (max-width: 767px) {}
 
 .image-container:hover {}
+
+/* Black Accordion Styles */
+.accordion-button {
+	background-color: #000; /* Black background for the header */
+	color: #fff; /* White text for contrast */
+	position: relative;
+}
+
+.accordion-button::after {
+	content: '\25BC'; /* Downward arrow symbol */
+	position: absolute;
+	right: 1rem;
+	transform: rotate(0deg);
+	transition: transform 0.3s ease-in-out;
+}
+
+.accordion-button:not(.collapsed)::after {
+	transform: rotate(-180deg); /* Rotate arrow when expanded */
+}
+
+.accordion-button:not(.collapsed) {
+	color: #fff; /* Keep text white when expanded */
+	background-color: #333; /* Dark gray when expanded */
+}
+
+.accordion-body {
+	background-color: #000; /* Black background for content */
+	color: #fff; /* White text for content */
+}
+
+.accordion-item {
+	border: 1px solid #444; /* Darker border for each item */
+}
+
+.accordion-button:focus {
+	box-shadow: none;  /* Removes the blue focus outline */
+	outline: none;  /* Removes the default focus outline */
+}
+
+.media-icon{
+	aspect-ratio: 1;
+	font-size: 5em;
+	height: 1.5em;
+}
