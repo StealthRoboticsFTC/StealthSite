@@ -26,7 +26,11 @@ button {
 }
 
 .profile-card {
-	height: auto;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	width: 100%;
+	height: 30em;
+	object-fit: cover;
 }
 
 .profile-img {
