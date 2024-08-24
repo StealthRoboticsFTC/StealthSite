@@ -9,10 +9,10 @@ jobs:
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@v1.0.3
       with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
-        port: ${{ secrets.PORT }}
+          host: ${{ secrets.WEBSVR }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          port: ${{ secrets.PORT }}
         script: |
             cd ~/StealthSite/ci
             nohup setsid ./rundeploy.sh > rundeploy.log 2>&1 &
