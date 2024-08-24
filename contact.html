@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Stealth Robotics #18255</title>
     <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
@@ -10,17 +11,23 @@
     <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <!-- Load Font Awesome 4.7 (older version for your existing icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" type="text/css" href="css/default.css">
     <style>
         .bg-red {
             background-color: #ff0000 !important;
         }
+
         .modal-content {
             background-color: #343a40;
         }
+
         .modal-content .modal-header,
         .modal-content .modal-body,
         .modal-content .modal-footer {
@@ -28,11 +35,13 @@
         }
     </style>
 </head>
+
 <body>
 <nav class="navbar navbar-dark navbar-expand-lg bg-dark text-white">
     <div class="container-fluid">
         <img class="navbar-brand icon" src="images/stealth/logo.png">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -44,7 +53,8 @@
                     <a class="nav-link" aria-current="page" href="game.html">Game</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false" aria-current="page">
                         Team
                     </a>
                     <ul class="dropdown-menu">
@@ -56,7 +66,8 @@
                     <a class="nav-link" href="events.html">Events</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
                         Sponsor
                     </a>
                     <ul class="dropdown-menu">
@@ -65,7 +76,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="">Contact</a>
+                    <a class="nav-link active" href="#">Contact</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="fll-covert/covert.html">Covert</a>
@@ -85,27 +96,33 @@
 <section class="container my-5 rounded">
     <div class="row text-center">
         <div class="col-md-3 d-flex justify-content-center align-items-center">
-            <a href="https://www.facebook.com/StealthRoboticsFTC/" class="text-decoration-none text-white">
-                <img src="https://via.placeholder.com/100" alt="Facebook" class="img-fluid rounded-circle mb-3">
-                <h4>Facebook</h4>
-            </a>
-        </div>
-        <div class="col-md-3 d-flex justify-content-center align-items-center">
             <a href="#" class="text-decoration-none text-white">
-                <img src="https://via.placeholder.com/100" alt="Twitter" class="img-fluid rounded-circle mb-3">
-                <h4>X</h4>
-            </a>
-        </div>
-        <div class="col-md-3 d-flex justify-content-center align-items-center">
-            <a href="#" class="text-decoration-none text-white">
-                <img src="https://via.placeholder.com/100" alt="Instagram" class="img-fluid rounded-circle mb-3">
+                <div class="rounded-circle mb-3 bg-secondary media-icon">
+                    <i class="fa fa-instagram"></i>
+                </div>
                 <h4>Instagram</h4>
             </a>
         </div>
         <div class="col-md-3 d-flex justify-content-center align-items-center">
             <a href="#" class="text-decoration-none text-white">
                 <div class="rounded-circle mb-3 bg-secondary media-icon">
-                    <i class="fa fa-youtube-play"></i>
+                    <i class="fa fa-facebook"></i>
+                </div>
+                <h4>Facebook</h4>
+            </a>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center align-items-center">
+            <a href="#" class="text-decoration-none text-white">
+                <div class="rounded-circle mb-3 bg-secondary media-icon">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+                <h4>X</h4>
+            </a>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center align-items-center">
+            <a href="#" class="text-decoration-none text-white">
+                <div class="rounded-circle mb-3 bg-secondary media-icon">
+                    <i class="fa fa-youtube"></i>
                 </div>
                 <h4>YouTube</h4>
             </a>
@@ -144,7 +161,8 @@
         <div class="col-lg-6">
             <div class="p-4 bg-red rounded shadow text-center text-white">
                 <h2 class="mb-4">Contact Information</h2>
-                <p>Email: <a href="mailto:info@stealthrobotics.com" class="text-white">stealthrobotics1@gmail.com</a></p>
+                <p>Email: <a href="mailto:info@stealthrobotics.com" class="text-white">stealthrobotics1@gmail.com</a>
+                </p>
                 <p>Phone: <a href="tel:+1234567890" class="text-white">+1 (847) 721-5408</a></p>
                 <img src="images/stealth/logo.png" alt="Stealth Robotics Logo" class="img-fluid my-3">
             </div>
@@ -161,7 +179,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                Try again later.
+                Message Sent.
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -177,7 +195,7 @@
         modal.show();
     }
 
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
         e.preventDefault();
 
         const name = document.getElementById('name').value;
@@ -196,19 +214,29 @@
             })
         })
             .then(response => {
-                if (response.ok) {
-                    showModal('Your message was sent successfully!');
+                // Check if the response is JSON
+                const contentType = response.headers.get('content-type');
+                if (contentType && contentType.indexOf('application/json') !== -1) {
+                    // If JSON, parse it
+                    return response.json();
                 } else {
-                    return response.json().then(data => {
-                        throw new Error(data.message || 'Failed to send message. Please try again later.');
+                    // If not JSON, return the text to inspect
+                    return response.text().then(text => {
+                        throw new Error(`Expected JSON, but got HTML: ${text}`);
                     });
                 }
             })
+            .then(data => {
+                // Handle the parsed JSON data
+                showModal('Your message was sent successfully!');
+            })
             .catch(error => {
+                // Show the error message in the modal
                 showModal(error.message);
             });
     });
 </script>
 
 </body>
+
 </html>
