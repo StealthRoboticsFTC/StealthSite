@@ -185,5 +185,12 @@ button {
 	height: 1.5em;
 }
 
+.carousel-item img {
+	width: 100%;         /* Full width of the carousel */
+	height: 300px;       /* Fixed height for uniformity */
+	object-fit: contain; /* Preserve the entire image, adding padding if necessary */
+	background-color: #000; /* Optional: set a background color for padding areas */
+}
+
 
 
