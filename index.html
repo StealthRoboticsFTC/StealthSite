@@ -15,6 +15,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<script src="default.js"></script>
 
 	<style>
 		body {
@@ -22,6 +23,14 @@
 			color: #333;
 		}
 
+		@media (max-width: 768px) {
+			/* On mobile devices, no animation */
+			.header, .text-body, .label {
+				opacity: 1 !important;
+				transform: translateY(0) !important;
+				transition: none !important;
+			}
+		}
 		.header, .text-body, .label {
 			opacity: 0;
 			transform: translateY(50px);
@@ -87,7 +96,7 @@
 </div>
 
 <div class="body">
-	<h1 class="header">About Our Team:</h1>
+	<h1 class="header sub-body-text">About Our Team:</h1>
 	<p class="text-body">We are a group of aspiring engineers committed to deepening our love and passion for
 		robotics, inspiring the next generation of students to do the same, and finding ways to give back to our
 		communities and support under-resourced teams. We are Team #18255, part of a non-profit 501(c)(3)
@@ -103,7 +112,7 @@
 			hands dirty, learning from our mistakes, and constantly trying new ways of doing things.</li>
 	</ul>
 
-	<h1 class="header">Our Goals:</h1>
+	<h1 class="header sub-body-text">Our Goals:</h1>
 	<ul class="text-body">
 		<li><strong>Foster Innovation</strong>: By constantly experimenting with new ideas and technologies, we
 			strive to be at the forefront of innovation in robotics.</li>
@@ -114,7 +123,7 @@
 			encourage young students to pursue careers in these fields.</li>
 	</ul>
 
-	<h1 class="header">Join Us:</h1>
+	<h1 class="header sub-body-text">Join Us:</h1>
 	<p class="text-body">Are you interested in supporting our journey? Whether you're a student eager to learn, a
 		mentor with valuable experience, or a company looking to sponsor a local robotics team, there are many ways
 		to get involved with Team #18255.</p>
@@ -130,7 +139,7 @@
 			generation of innovators.</li>
 	</ul>
 
-	<h1 class="header">Our Commitment:</h1>
+	<h1 class="header sub-body-text">Our Commitment:</h1>
 	<ul class="text-body">
 		<li>Deepening our passion for robotics.</li>
 		<li>Inspiring the next generation of STEM leaders.</li>
@@ -145,25 +154,32 @@
 <p class="watermark">Website by JChen and TBerlin</p>
 
 <script>
-	// Fade-in Effect on Scroll
-	const fadeInElements = document.querySelectorAll('.header, .text-body, .label');
-	window.addEventListener('scroll', () => {
-		fadeInElements.forEach(element => {
-			const position = element.getBoundingClientRect().top;
-			const windowHeight = window.innerHeight;
-			if (position < windowHeight - 100) {
-				element.style.opacity = 1;
-				element.style.transform = 'translateY(0)';
-			}
-		});
-	});
+	// Check if the device is not mobile based on screen width
+	const isDesktop = window.matchMedia("(min-width: 769px)").matches;
 
-	fadeInElements.forEach(element => {
-		element.style.opacity = 0;
-		element.style.transform = 'translateY(50px)';
-		element.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-	});
+	if (isDesktop) {
+		// Fade-in Effect on Scroll
+		const fadeInElements = document.querySelectorAll('.header, .text-body, .label');
+		window.addEventListener('scroll', () => {
+			fadeInElements.forEach(element => {
+				const position = element.getBoundingClientRect().top;
+				const windowHeight = window.innerHeight;
+				if (position < windowHeight - 100) {
+					element.style.opacity = 1;
+					element.style.transform = 'translateY(0)';
+				}
+			});
+		});
+
+		// Initial state for fade-in elements
+		fadeInElements.forEach(element => {
+			element.style.opacity = 0;
+			element.style.transform = 'translateY(50px)';
+			element.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+		});
+	}
 </script>
+
 </body>
 
 </html>
