@@ -115,3 +115,7 @@ body {
     font-weight: bolder !important;
     color: white;
 }
+
+.sub-body-text{
+    color: blue;
+}
