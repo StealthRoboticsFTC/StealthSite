@@ -24,19 +24,19 @@
             color: #333;
         }
 
+        .header, .text-body, .label {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
         @media (max-width: 768px) {
-            /* On mobile devices, no animation */
+            /* Disable animation on mobile */
             .header, .text-body, .label {
                 opacity: 1 !important;
                 transform: translateY(0) !important;
                 transition: none !important;
             }
-        }
-
-        .header, .text-body, .label {
-            opacity: 0;
-            transform: translateY(50px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
         }
 
         .scroll-down {
@@ -198,8 +198,16 @@
     // Check user agent to detect if the device is a phone
     const isPhone = /iPhone|Android|Mobile|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-    if (!isPhone) {
-        // Apply fade-in effects only for non-phone devices
+    if (isPhone) {
+        // Disable animation on phones
+        const elements = document.querySelectorAll('.header, .text-body, .label');
+        elements.forEach(element => {
+            element.style.opacity = 1;
+            element.style.transform = 'translateY(0)';
+            element.style.transition = 'none';
+        });
+    } else {
+        // Enable fade-in effects for non-phone devices
         const fadeInElements = document.querySelectorAll('.header, .text-body, .label');
         window.addEventListener('scroll', () => {
             fadeInElements.forEach(element => {
@@ -220,7 +228,7 @@
         });
     }
 
-    // Smooth scroll to content for all devices
+    // Smooth scroll to content
     function scrollToContent() {
         const contentSection = document.querySelector('.body');
         contentSection.scrollIntoView({ behavior: 'smooth' });
