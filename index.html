@@ -61,7 +61,7 @@
         .scroll-down img {
             width: 50px;
             height: auto;
-            transform: rotate(180deg); /* Rotates the image upside down */
+            transform: rotate(180deg);
         }
     </style>
 </head>
@@ -195,11 +195,11 @@
 <p class="watermark">Website by JChen and TBerlin</p>
 
 <script>
-    // Check if the device is not mobile based on screen width
-    const isDesktop = window.matchMedia("(min-width: 769px)").matches;
+    // Check user agent to detect if the device is a phone
+    const isPhone = /iPhone|Android|Mobile|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-    if (isDesktop) {
-        // Fade-in Effect on Scroll
+    if (!isPhone) {
+        // Apply fade-in effects only for non-phone devices
         const fadeInElements = document.querySelectorAll('.header, .text-body, .label');
         window.addEventListener('scroll', () => {
             fadeInElements.forEach(element => {
@@ -220,7 +220,7 @@
         });
     }
 
-    // Smooth scroll to content
+    // Smooth scroll to content for all devices
     function scrollToContent() {
         const contentSection = document.querySelector('.body');
         contentSection.scrollIntoView({ behavior: 'smooth' });
